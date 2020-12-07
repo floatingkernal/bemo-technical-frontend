@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Str;
 
+$DATABASE_URL=parse_url('CLEARDB_DATABASE_URL');
+
 return [
 
     /*
