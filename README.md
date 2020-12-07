@@ -33,6 +33,7 @@
     - reason for this approach was because we needed to be able to chage the location of the card and linked list works best to change the order of the card in an efficient manner.
 - backend code is available at: https://github.com/floatingkernal/bemo-technical-frontend/tree/backend
 - Below is the documentation for the rest api I created
+- Testing was conducted maually. for instance, manually check the front end was sending the data correctly in the backend and the backend was producing exptect actions as a result. I did not have the time to write automated tests for this application at the moment. In the future I would add many test cases.
 
 # Backend REST api documentation:
 ### Get Board
