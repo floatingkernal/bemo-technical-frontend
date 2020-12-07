@@ -32,6 +32,7 @@
     - to get the list of cards in a column, start with the head card and while there is a next card avaialble, get that card and append it to the list and repeat. 
     - reason for this approach was because we needed to be able to chage the location of the card and linked list works best to change the order of the card in an efficient manner.
 - backend code is available at: https://github.com/floatingkernal/bemo-technical-frontend/tree/backend
+in particular the api controller was done at [this file](https://github.com/floatingkernal/bemo-technical-frontend/blob/backend/app/Http/Controllers/BoardController.php)
 - Below is the documentation for the rest api I created
 - Testing was conducted maually. for instance, manually check the front end was sending the data correctly in the backend and the backend was producing exptect actions as a result. I did not have the time to write automated tests for this application at the moment. In the future I would add many test cases.
 
