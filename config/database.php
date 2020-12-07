@@ -5,7 +5,7 @@ use Illuminate\Support\Str;
 $DATABASE_URL= [
     'url' => 'mysql://sfarqs0googxmit6:ghrlbhjxrds48ro6@ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/gdhtpagm7hiujaip',
     'host' => 'ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    'port' => '3306'
+    'port' => '3306',
     'path' => 'gdhtpagm7hiujaip',
     'user' => 'sfarqs0googxmit6',
     'pass' => 'ghrlbhjxrds48ro6',
