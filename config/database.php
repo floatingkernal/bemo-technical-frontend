@@ -2,7 +2,14 @@
 
 use Illuminate\Support\Str;
 
-$DATABASE_URL=parse_url('CLEARDB_DATABASE_URL');
+$DATABASE_URL= [
+    'url' => 'mysql://b6159511008c5d:9a74e3a5@us-cdbr-east-02.cleardb.com/heroku_e4eba87b0e6aafc?reconnect=true',
+    'host' => 'us-cdbr-east-02.cleardb.com',
+    'path' => 'heroku_e4eba87b0e6aafc',
+    'user' => 'b6159511008c5d',
+    'pass' => '9a74e3a5',
+
+];
 
 return [
 
@@ -47,12 +54,18 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            // 'url' => env('DATABASE_URL'),
+            // 'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            // 'database' => env('DB_DATABASE', 'forge'),
+            // 'username' => env('DB_USERNAME', 'forge'),
+            // 'password' => env('DB_PASSWORD', ''),
+            'url' => $DATABASE_URL['url'],
+            'host' => $DATABASE_URL['host'],
+            // 'port' => $DATABASE_URL['post'],
+            'database' => $DATABASE_URL['path'],
+            'username' => $DATABASE_URL['user'],
+            'password' => $DATABASE_URL['pass'],
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
