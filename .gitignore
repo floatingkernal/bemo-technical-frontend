@@ -2,6 +2,7 @@
 node_modules
 /dist
 composer.phar
+backend
 
 # local env files
 .env.local
