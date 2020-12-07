@@ -3,11 +3,12 @@
 use Illuminate\Support\Str;
 
 $DATABASE_URL= [
-    'url' => 'mysql://b6159511008c5d:9a74e3a5@us-cdbr-east-02.cleardb.com/heroku_e4eba87b0e6aafc?reconnect=true',
-    'host' => 'us-cdbr-east-02.cleardb.com',
-    'path' => 'heroku_e4eba87b0e6aafc',
-    'user' => 'b6159511008c5d',
-    'pass' => '9a74e3a5',
+    'url' => 'mysql://sfarqs0googxmit6:ghrlbhjxrds48ro6@ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/gdhtpagm7hiujaip',
+    'host' => 'ixnzh1cxch6rtdrx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    'port' => '3306'
+    'path' => 'gdhtpagm7hiujaip',
+    'user' => 'sfarqs0googxmit6',
+    'pass' => 'ghrlbhjxrds48ro6',
 
 ];
 
@@ -56,13 +57,13 @@ return [
             'driver' => 'mysql',
             // 'url' => env('DATABASE_URL'),
             // 'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
+            // 'port' => env('DB_PORT', '3306'),
             // 'database' => env('DB_DATABASE', 'forge'),
             // 'username' => env('DB_USERNAME', 'forge'),
             // 'password' => env('DB_PASSWORD', ''),
             'url' => $DATABASE_URL['url'],
             'host' => $DATABASE_URL['host'],
-            // 'port' => $DATABASE_URL['post'],
+            'port' => $DATABASE_URL['port'],
             'database' => $DATABASE_URL['path'],
             'username' => $DATABASE_URL['user'],
             'password' => $DATABASE_URL['pass'],
